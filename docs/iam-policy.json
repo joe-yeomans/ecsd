@@ -1,0 +1,34 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadECS",
+      "Effect": "Allow",
+      "Action": [
+        "ecs:ListClusters",
+        "ecs:DescribeClusters",
+        "ecs:ListServices",
+        "ecs:DescribeServices",
+        "ecs:ListTasks",
+        "ecs:DescribeTasks"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadScheduledTasks",
+      "Effect": "Allow",
+      "Action": [
+        "events:ListRules",
+        "events:ListTargetsByRule",
+        "events:DescribeRule"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadTaskMetrics",
+      "Effect": "Allow",
+      "Action": "cloudwatch:GetMetricStatistics",
+      "Resource": "*"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+/ecsd
+/build/ecsd
+/ecsd.exe
+/dist/
+/coverage.out
+.env
+.env.*
+!.env.example
+.DS_Store
